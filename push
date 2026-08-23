@@ -1,0 +1,4 @@
+cd facturacion-mvp
+git add .
+git commit -m "Agregar MVP de facturación"
+git push origin main
