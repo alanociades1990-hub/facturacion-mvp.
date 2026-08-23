@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sistema de Facturación</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Sistema de Facturación</h1>
+    <form id="facturaForm">
+        <h2>Agregar Factura</h2>
+        <label>Nombre Cliente:
+            <input type="text" id="cliente" required />
+        </label><br/><br/>
+        <label>Producto:
+            <input type="text" id="producto" required />
+        </label><br/><br/>
+        <label>Cantidad:
+            <input type="number" id="cantidad" required />
+        </label><br/><br/>
+        <label>Precio Unitario:
+            <input type="number" id="precio" required />
+        </label><br/><br/>
+        <button type="submit">Agregar Factura</button>
+    </form>
+
+    <h2>Facturas Guardadas</h2>
+    <table border="1" id="tablaFacturas">
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
